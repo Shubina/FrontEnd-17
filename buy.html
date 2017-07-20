@@ -7,242 +7,243 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Цветение кактусов">
     <meta name="keywords" content="cactus, flowers, кактус, цветы">
-    <title>Cactus Flowers</title>
+    <title>Buy online | Cactus Flowers</title>
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <a href="/" class="logo">
             <img src="images/logo.png" alt="Cactus logo">
-            <strong>cactus-pro</strong>
+            <strong class="slogan">cactus-pro</strong>
         </a>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sorts.html">Sorts</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="/">Buy online</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+            <ul class="main-menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="sorts.html">Sorts</a></li>
+                <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                <li class="menu-item active"><a href="/">Buy online</a></li>
+                <li class="menu-item"><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="english.html">English</a></li>
-            <li><a href="russian.html">Русский</a></li>
-        </ul>
     </header>
-    <main>
-        <form class="input-form" action="mailto:oshka@ukr.net" method="post" title="Оформление заказа">
-            <h3>Оформление заказа</h3>
-            <fieldset>
-                <legend>Контактные данные</legend>
-                <label for="new"><input id="new" type="radio" name="client" value="Новый" checked>Новый</label>
-                <label for="old"><input id="old" type="radio" name="client" value="Постоянный">Постоянный</label> <br>
-                <label for="userName">Ваше имя<input id="userName" autofocus autocomplete="on" tabindex="1" type="text" name="user-name" pattern="^[a-zA-Z][a-zA-Z\.]{1,20}$" required value=""></label>
-                <label for="userSurname">Ваша фамилия<input id="userSurname" tabindex="2" type="text" name="user-surname" pattern="^[a-zA-Z][a-zA-Z\.]{1,20}$" value=""></label> <br>
-                <label for="city">Город<input id="city" name="city-location" list="city-choice" placeholder="Введите свой город" required tabindex="3" type="text" value="" maxlength="200"></label><br>
-                <datalist id="city-choice">
-                    <option value="Харьков">
-                    <option value="Киев">
-                    <option value="Одесса">
-                </datalist>
-                <label for="userTel">Ваш номер телефона<input id="userTel" name="user-phone" pattern="^\s*((\+?\s*(\(\s*)?3)?[\s-]*(\(\s*)?8[\s-]*)?(\(\s*)?0[\s-\(]*[1-9][\s-]*\d(\s*\))?([\s-]*\d){7}\s*$" required tabindex="4" type="tel"> <br>
-                <label for="userEmail">Эл.почта<input id="userEmail" name="user-email" tabindex="5" type="email"> <br>
-            </fieldset>
-            <fieldset>
-                <legend>Подробности заказа</legend>
-                <input type="radio" name="type-flower" value="Суккулент" checked>Суккулент
-                <input type="radio" name="type-flower" value="Кактус">Кактус
-            </fieldset>
-            <button name="send" type="submit" value="ОК">Отправить заказ</button>
-            <button type="reset">Отменить заказ</button>
-        </form>
+    <div class="wrap">
+        <main>
+            <form class="input-form" action="mailto:oshka@ukr.net" method="post" title="Оформление заказа">
+                <h3>Оформление заказа</h3>
+                <fieldset>
+                    <legend>Контактные данные</legend>
+                    <label for="new"><input id="new" type="radio" name="client" value="Новый" checked>Новый</label>
+                    <label for="old"><input id="old" type="radio" name="client" value="Постоянный">Постоянный</label> <br>
+                    <label for="userName">Ваше имя<input id="userName" autofocus autocomplete="on" tabindex="1" type="text" name="user-name" pattern="^[a-zA-Z][a-zA-Z\.]{1,20}$" required value=""></label>
+                    <label for="userSurname">Ваша фамилия<input id="userSurname" tabindex="2" type="text" name="user-surname" pattern="^[a-zA-Z][a-zA-Z\.]{1,20}$" value=""></label> <br>
+                    <label for="city">Город<input id="city" name="city-location" list="city-choice" placeholder="Введите свой город" required tabindex="3" type="text" value="" maxlength="200"></label><br>
+                    <datalist id="city-choice">
+                        <option value="Харьков">
+                        <option value="Киев">
+                        <option value="Одесса">
+                    </datalist>
+                    <label for="userTel">Ваш номер телефона<input id="userTel" name="user-phone" pattern="^\s*((\+?\s*(\(\s*)?3)?[\s-]*(\(\s*)?8[\s-]*)?(\(\s*)?0[\s-\(]*[1-9][\s-]*\d(\s*\))?([\s-]*\d){7}\s*$" required tabindex="4" type="tel"> <br>
+                    <label for="userEmail">Эл.почта<input id="userEmail" name="user-email" tabindex="5" type="email"> <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Подробности заказа</legend>
+                    <input type="radio" name="type-flower" value="Суккулент" checked>Суккулент
+                    <input type="radio" name="type-flower" value="Кактус">Кактус
+                </fieldset>
+                <button name="send" type="submit" value="ОК">Отправить заказ</button>
+                <button type="reset">Отменить заказ</button>
+            </form>
 
-        <ul>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="circle"><div></div></div>
-    </main>
-    <aside>
-        <p>
-            <q><mark>Cactus</mark> - any of numerous succulent plants of the family Cactaceae, of warm, arid regions of the New World,
-                having fleshy, leafless, usually spiny stems, and typically having solitary, showy flowers.
-            </q>
-            <cite>http://www.dictionary.com</cite>
-        </p>
-        <hr>
-        <p>
-            <q><mark>Cactus</mark> A succulent plant with a thick, fleshy stem that typically bears spines, lacks leaves, and has brilliantly colored flowers.
-                Cacti are native to arid regions of the New World and are cultivated elsewhere, especially as houseplants.
-            </q>
-            <cite>https://en.oxforddictionaries.com</cite>
-        </p>
-    </aside>
+            <ul>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="circle"><div></div></div>
+        </main>
+        <aside>
+            <p>
+                <q><mark>Cactus</mark> - any of numerous succulent plants of the family Cactaceae, of warm, arid regions of the New World,
+                    having fleshy, leafless, usually spiny stems, and typically having solitary, showy flowers.
+                </q>
+                <cite>http://www.dictionary.com</cite>
+            </p>
+            <hr>
+            <p>
+                <q><mark>Cactus</mark> A succulent plant with a thick, fleshy stem that typically bears spines, lacks leaves, and has brilliantly colored flowers.
+                    Cacti are native to arid regions of the New World and are cultivated elsewhere, especially as houseplants.
+                </q>
+                <cite>https://en.oxforddictionaries.com</cite>
+            </p>
+        </aside>
+    </div>
     <footer>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="sorts.html">Sorts</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-        <div class="social">
-            <span>Follow cactus</span>
-            <ul>
-                <li>
-                    <a class="ion-social-facebook-outline" href="https://www.facebook.com" target="_blank"></a>
-                </li>
-                <li>
-                    <a class="ion-social-twitter-outline" href="https://twitter.com" target="_blank"></a>
-                </li>
-                <li>
-                    <a class="ion-social-linkedin-outline" href="https://www.linkedin.com" target="_blank"></a>
-                </li>
-            </ul>
+        <div class="footer-wrap">
+            <nav>
+                <ul class="main-menu">
+                    <li class="menu-item"><a href="/">Home</a></li>
+                    <li class="menu-item"><a href="sorts.html">Sorts</a></li>
+                    <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                    <li class="menu-item"><a href="buy.html">Buy online</a></li>
+                    <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <span>Follow cactus</span>
+                <ul>
+                    <li>
+                        <a class="ion-social-facebook-outline" href="https://www.facebook.com" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="ion-social-twitter-outline" href="https://twitter.com" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="ion-social-linkedin-outline" href="https://www.linkedin.com" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <address>Kharkiv, Constitution square, 1</address>
         <div class="copyright">&copy 2017 Olga Shubina</div>
+        <address>Kharkiv, Constitution square, 1</address>
     </footer>
 </body>
 </html>
