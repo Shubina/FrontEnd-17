@@ -1,67 +1,82 @@
-.input-form input[for="new"] {
-	color: blue;
+@import 'normilize.css';
+
+html,
+body {
+	height: 100%;
 }
-.input-form input[for="old"] {
-	color: pink;
-}
-* {
-	margin: 0;
-	padding: 0;
+body {
+	font: 24px/27px 'Open+Sans', Arial, Helvetica, sans-serif;
+	min-width: 320px;
 }
 li {
 	list-style-type: none;
 }
-main>ul {
-	border: 1px solid #ccc;
-	margin: 20px auto 20px;
-	box-sizing: border-box;
-	width: 520px;
+a {
+	color: #ccc;
+	text-decoration: none;
 }
-main>ul {
+header {
+	background: #000;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 3%;
+}
+.logo img {
+	max-width: 100px;
+}
+.slogan {
+	vertical-align: super;
+}
+.main-menu {
 	display: flex;
 }
-main>ul>li>ul li {
-	width: 50px;
-	height: 50px;
-	border: 1px solid #ccc;
+
+.slogan {
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	font: 24px/27px 'Montserrat';
 }
-
-// main>ul>li:nth-child(even) ul li:nth-child(odd),
-// main>ul>li:nth-child(odd) ul li:nth-child(even) {
-// 	background: #000;
-// }
-
-// main>ul>li:first-child,
-// main>ul>li:last-child,
-// main>ul>li li:first-child,
-// main>ul>li li:last-child  {
-// 	background: #000;
-// }
-
-main>ul>li:nth-child(n+1) li:nth-child(10n+1) {
-	background: #000;
-}
-
-.circle {
-	width: 100px;
-	height: 100px;
-	background: yellow;
-	//border: 10px solid #ccc;
-	border-radius: 50%;
+.gallery {
+	margin: 50px auto;
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
 	position: relative;
-	z-index: 10;
 }
-.circle>div {
-	background: url('../images/gall-1.png');
-	background-size: cover;
-	width: 120px;
-	height: 120px;
+
+.gallery li {
 	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	border-radius: 50%;
-	z-index: -1;
+	animation: round 16s infinite;
+	opacity: 0;
 }
+.gallery li img {
+	display: block;
+	width: 100%;
+}
+@keyframes round {
+	25% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+}
+.gallery li:nth-child(1) {
+	animation-delay: 12s;
+}
+
+.gallery li:nth-child(2) {
+	animation-delay: 8s;
+}
+
+.gallery li:nth-child(3) {
+	animation-delay: 4s;
+}
+
+.gallery li:nth-child(4) {
+	animation-delay: 0s;
+}
+
