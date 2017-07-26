@@ -1,4 +1,6 @@
 @import 'normilize.css';
+@import 'sorts.css';
+@import 'buy.css';
 
 html,
 body {
@@ -7,6 +9,7 @@ body {
 body {
 	font: 14px/17px 'Open+Sans', Arial, Helvetica, sans-serif;
 	min-width: 320px;
+	margin: 0;
 }
 li {
 	list-style-type: none;
@@ -148,7 +151,6 @@ footer {
 	background: #000;
 	width:100%;
     min-height:70px;
-    margin-top:-70px;
     color: #fff;
     padding: 10px;
     box-sizing: border-box;

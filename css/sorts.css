@@ -1,0 +1,134 @@
+.map-section h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font: 34px/50px 'Montserrat';
+}
+
+.map-section {
+    padding: 82px 0;
+    background-image: linear-gradient(180deg,#e9e9e9,#fff);
+	width: 100%;
+}
+
+.container-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #221e22;
+}
+.map-holder {
+    width: 100%;
+    height: auto;
+    margin: 80px 0 0;
+    position: relative;
+    text-align: center;
+}
+.map-holder>img {
+    width: 100%;
+}
+.map-sticker-holder {
+    position: absolute;
+}
+.map-sticker-holder:hover:before {
+    width: 54px;
+    height: 54px;
+    opacity: .64;
+    background-color: #ee5622;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.5);
+    border: 1px solid hsla(0,0%,100%,.3);
+    position: absolute;
+    z-index: 10;
+    content: "";
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    top: -10px;
+    left: -10px;
+}
+.map-sticker {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    background-color: #ee5622;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.5);
+    border: 1px solid hsla(0,0%,100%,.44);
+    border-radius: 100%;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    color: #fff;
+    z-index: 12;
+    position: relative;
+}
+.map-sticker-holder.small .map-sticker {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.map-sticker-holder:hover .map-sticker {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: montserratregular;
+}
+.map-sticker-holder.xl .map-sticker {
+    width: 50px;
+    height: 50px;
+}
+.map-sticker-holder.xl:hover:before {
+    width: 69px;
+    height: 69px;
+}
+.map-sticker-holder.small:hover:before {
+    top: -12px;
+    left: -12px;
+}
+.map-popup {
+    width: 300px;
+    position: absolute;
+    left: -9999px;
+    top: 20px;
+    background: rgba(0,0,0,.6);
+    padding: 3px 8px;
+    visibility: hidden;
+    z-index: 20;
+}
+.map-popup-inner {
+    width: 100%;
+    overflow-y: auto;
+    height: 200px;
+    cursor: pointer;
+    text-align: left;
+}
+.map-holder .map-popup-img {
+    width: 60px;
+    height: 34px;
+    margin: 8px 4px;
+}
+.map-sticker-holder:hover .map-sticker {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: montserratregular;
+}
+.map-sticker-holder:hover .map-popup {
+    visibility: visible;
+    left: 24px;
+}
+.map-popup-inner::-webkit-scrollbar {
+    width: 6px;
+}
+.map-popup-inner::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+.map-popup-inner::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 4px;
+}
+.map-sticker-holder[name=Australia] .map-popup, 
+.map-sticker-holder[name=China] .map-popup, 
+.map-sticker-holder[name=India] .map-popup {
+    left: inherit;
+    right: 0;
+}
